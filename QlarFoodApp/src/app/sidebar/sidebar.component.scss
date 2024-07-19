@@ -1,0 +1,48 @@
+.Sidebar{
+
+   background-color: #21d873;
+}
+
+
+.SidebarContent{
+
+    font-family: 'Gill Sans', 'Gill Sans MT',  "Calibri", 'Trebuchet MS', sans-serif;
+    background-color: beige;
+    margin-right: 5px;
+    border-radius: 20px;
+}
+
+.SidebarInnerContent{
+
+    display: flex;
+    background-color: rgb(28, 7, 68);
+    color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin: 1px;
+
+
+
+    &:hover {
+        background-color: #917ee7;
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(113, 247, 95, 0.5);
+    }
+      
+    &:active {
+        background-color: #a531f3;
+        transform: scale(0.98);
+    }
+    
+    &:disabled {
+        background-color: #cccccc;
+        color: #666666;
+        cursor: not-allowed;
+    }
+}
+

@@ -1,0 +1,31 @@
+<router-outlet />
+
+<!-- <img src='C:\Users\Angular\Desktop\QlarFoodApp\Assets\qlar_group_logo.jpg' alt='QlarLogo'> -->
+
+<h3>Qlar unsere Mission ist unqlar</h3>
+
+<div class="MenuSetup">
+    <div class="Sidebar">
+
+        <app-sidebar></app-sidebar>
+
+    </div>
+
+
+    <div class="Mainbar">
+        
+        
+        <app-buttons [Default]="'Home'"></app-buttons>
+        <app-buttons [Default]="'Rezepte'"></app-buttons>
+        <app-buttons [Default]="'Maschinen'"></app-buttons>
+        <app-buttons [Default]="'Support'"></app-buttons>
+        <app-buttons [Default]="'Über uns'"></app-buttons>
+        <app-buttons [Default]="'Kontakt'"></app-buttons>
+        <app-searchbar></app-searchbar>
+
+
+    </div>
+
+</div>
+
+<app-food-choose-screen></app-food-choose-screen>
