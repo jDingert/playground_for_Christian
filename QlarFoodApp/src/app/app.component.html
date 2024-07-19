@@ -5,27 +5,19 @@
 <h3>Qlar unsere Mission ist unqlar</h3>
 
 <div class="MenuSetup">
-    <div class="Sidebar">
+  <div class="Sidebar">
+    <app-sidebar></app-sidebar>
+  </div>
 
-        <app-sidebar></app-sidebar>
-
-    </div>
-
-
-    <div class="Mainbar">
-        
-        
-        <app-buttons [Default]="'Home'"></app-buttons>
-        <app-buttons [Default]="'Rezepte'"></app-buttons>
-        <app-buttons [Default]="'Maschinen'"></app-buttons>
-        <app-buttons [Default]="'Support'"></app-buttons>
-        <app-buttons [Default]="'Über uns'"></app-buttons>
-        <app-buttons [Default]="'Kontakt'"></app-buttons>
-        <app-searchbar></app-searchbar>
-
-
-    </div>
-
+  <div class="Mainbar">
+    <app-buttons [label]="'Home'"></app-buttons>
+    <app-buttons [label]="'Rezepte'"></app-buttons>
+    <app-buttons [label]="'Maschinen'"></app-buttons>
+    <app-buttons [label]="'Support'"></app-buttons>
+    <app-buttons [label]="'Über uns'"></app-buttons>
+    <app-buttons [label]="'Kontakt'"></app-buttons>
+    <app-searchbar></app-searchbar>
+  </div>
 </div>
 
 <app-food-choose-screen></app-food-choose-screen>

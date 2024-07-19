@@ -5,12 +5,11 @@ import { Component, Input } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './buttons.component.html',
-  styleUrl: './buttons.component.scss'
+  styleUrl: './buttons.component.scss',
 })
 export class ButtonsComponent {
   //ButtonSearch: string ="Suche";
   //ButtonHome: string ="Home";
-  
-   @Input() Default: string ="Default";
-   
+
+  @Input() label: string = 'Default';
 }
