@@ -1,29 +1,42 @@
-.Box1 {
-  height: 100px;
-  width: 100px;
-  background-color: rgb(14, 187, 187);
+.containerMain{
+
+  display: flex;
+  border: 5px solid black;
+  height: 500px;
+  width: 500px;
 }
 
-.Box2 {
-  background-color: rgb(14, 187, 23);
+
+.box{
+
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  font-size: 8em;
+  border-radius: 15px;
+
 }
 
-.Box3 {
-  background-color: rgb(167, 14, 187);
+#box1{
+
+  background-color: red;
+  width: 100%;
+  align-content: start;
+
 }
 
-.Box4 {
-  background-color: rgb(187, 14, 43);
+#box2{
+
+  background-color: green;
+  align-content: end;
 }
 
-.Box5 {
-  background-color: rgb(170, 187, 14);
+#box3{
+
+  background-color: blue;
 }
 
-.Box6 {
-  background-color: rgb(187, 14, 14);
-}
+#box4{
 
-.Box7 {
-  background-color: rgb(187, 14, 100);
+  background-color: yellow;
 }
