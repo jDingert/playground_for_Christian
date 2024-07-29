@@ -1,13 +1,13 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-buttons',
+  selector: 'app-button',
   standalone: true,
   imports: [],
-  templateUrl: './buttons.component.html',
-  styleUrl: './buttons.component.scss',
+  templateUrl: './button.component.html',
+  styleUrl: './button.component.scss',
 })
-export class ButtonsComponent {
+export class ButtonComponent {
   //ButtonSearch: string ="Suche";
   //ButtonHome: string ="Home";
 

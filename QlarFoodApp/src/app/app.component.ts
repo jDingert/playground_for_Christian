@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { ButtonsComponent } from "./buttons/buttons.component";
+import { ButtonComponent } from "./button/button.component";
 import { SearchbarComponent } from './searchbar/searchbar.component';
 import { SidebarComponent } from "./sidebar/sidebar.component";
 import { FoodChooseScreenComponent } from "./food-choose-screen/food-choose-screen.component";
@@ -8,7 +8,7 @@ import { FoodChooseScreenComponent } from "./food-choose-screen/food-choose-scre
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ButtonsComponent, SearchbarComponent, SidebarComponent, FoodChooseScreenComponent],
+  imports: [RouterOutlet, ButtonComponent, SearchbarComponent, SidebarComponent, FoodChooseScreenComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
