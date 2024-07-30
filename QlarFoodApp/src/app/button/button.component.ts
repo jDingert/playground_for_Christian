@@ -8,8 +8,6 @@ import { Component, Input } from '@angular/core';
   styleUrl: './button.component.scss',
 })
 export class ButtonComponent {
-  //ButtonSearch: string ="Suche";
-  //ButtonHome: string ="Home";
 
   @Input() label: string = 'Default';
 }

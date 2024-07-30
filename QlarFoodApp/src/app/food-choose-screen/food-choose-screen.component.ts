@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, input } from '@angular/core';
 
 @Component({
   selector: 'app-food-choose-screen',
@@ -8,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrl: './food-choose-screen.component.scss'
 })
 export class FoodChooseScreenComponent {
+
+  @Input() Headline: string = 'Default';
+  @Input() Account: string = 'Default';
+  @Input() Views: string = 'Default';
+  @Input() Thumpnail: string = 'Default';
 
 }

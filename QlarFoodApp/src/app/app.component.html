@@ -6,7 +6,10 @@
 
 <div class="MenuSetup">
   <div class="Sidebar">
-    <app-sidebar></app-sidebar>
+    <app-sidebar [Text]="'Proflex'"></app-sidebar>
+    <app-sidebar [Text]="'Multicor'"></app-sidebar>
+    <app-sidebar [Text]="'Multibelt'"></app-sidebar>
+    <app-sidebar [Text]="'Multirail'"></app-sidebar>
   </div>
 
   <div class="Mainbar">
@@ -20,4 +23,9 @@
   </div>
 </div>
 
-<app-food-choose-screen></app-food-choose-screen>
+<div class="videocontainer">
+
+  <app-food-choose-screen [Headline] ="'Die besten Rezepte für deine Schenck Process Legacy Products'" [Account]="'Qlar'" [Views]="'503.237 Aufrufe - 22.07.2024'"></app-food-choose-screen>
+  <app-food-choose-screen [Headline] ="'5 Rezepte die gut für den Kreislauf und die Wirtschaft sind'" [Account]="'GrillmeisterBrucki'" [Views]="'1,2 Mio Aufrufe - 22.07.2024'"></app-food-choose-screen>
+</div>
+
