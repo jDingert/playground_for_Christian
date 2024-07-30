@@ -15,3 +15,4 @@ import { FoodChooseScreenComponent } from "./food-choose-screen/food-choose-scre
 export class AppComponent {
   title = 'QlarFoodApp';
 }
+
