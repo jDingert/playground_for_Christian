@@ -1,19 +1,14 @@
 <router-outlet />
 
-<img class="BackgroundPic"  />
-
-
-
-<h3>Qlar unsere Mission ist unqlar</h3>
-
 <div class="MenuSetup">
   <div class="Sidebar">
     <app-sidebar [Text]="'Proflex'"></app-sidebar>
     <app-sidebar [Text]="'Multicor'"></app-sidebar>
     <app-sidebar [Text]="'Multibelt'"></app-sidebar>
     <app-sidebar [Text]="'Multirail'"></app-sidebar>
-    
+
   </div>
+  
 
   <div class="Mainbar">
     <app-button [label]="'Home'"></app-button>
@@ -22,7 +17,7 @@
     <app-button [label]="'Support'"></app-button>
     <app-button [label]="'Über uns'"></app-button>
     <app-button [label]="'Kontakt'"></app-button>
-    <app-searchbar></app-searchbar>
+    <app-searchbar [placeholder]="'Search'"></app-searchbar>
   </div>
 </div>
 

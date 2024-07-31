@@ -9,4 +9,7 @@ import { Component, Input } from '@angular/core';
 })
 export class SearchbarComponent {
 
+  @Input() placeholder: string = 'Default';
+  @Input() value: string = 'Default';
+
 }

@@ -1,34 +1,40 @@
 .Button_Component{
 
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-    background-color: rgb(6, 5, 83);
-    color: aliceblue;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    padding-left: 5em;
-    padding-right: 5em;
-    border-radius: 5em;
-    margin-left: 1em;
-    stroke: none;
+    font-size: 1.25em;
+    color: #ffffff;
+    background-color: transparent;
+    border: none;
+    padding: 0.5em;
+
 
 
     &:hover {
-        background-color: #917ee7;
+        background-color: #c8d5fd;
+        color: #0a033f;
+        padding: 0.5em;
+        border-top-left-radius: 0.5em;
+        border-bottom-right-radius: 0.5em;
     }
 
     &:focus {
-        outline: none;
-        box-shadow: 0 0 0 0.1em rgba(113, 247, 95, 0.5);
+        background-color: #c8d5fd;
+        color: #0a033f;
+        padding: 0.5em;
+        border-top-left-radius: 0.5em;
+        border-bottom-right-radius: 0.5em;
+        
     }
       
     &:active {
-        background-color: #a531f3;
+        background-color: #dde6fe;
+        color: #0a033f;
         transform: scale(0.98);
     }
     
     &:disabled {
-        background-color: #cccccc;
-        color: #666666;
+        background-color: #cecdd9;
+        color: #0a033f;
         cursor: not-allowed;
     }
 
