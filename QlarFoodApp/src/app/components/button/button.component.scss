@@ -2,15 +2,17 @@
 
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     font-size: 1.25em;
-    color: #ffffff;
-    background-color: transparent;
+    background-color: #c8d5fd;
+    color: #0a033f;
     border: none;
     padding: 0.5em;
+    border-top-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
 
 
 
     &:hover {
-        background-color: #c8d5fd;
+        background-color: #dde6fe;
         color: #0a033f;
         padding: 0.5em;
         border-top-left-radius: 0.5em;
@@ -27,7 +29,7 @@
     }
       
     &:active {
-        background-color: #dde6fe;
+        background-color: #ceaaff;
         color: #0a033f;
         transform: scale(0.98);
     }

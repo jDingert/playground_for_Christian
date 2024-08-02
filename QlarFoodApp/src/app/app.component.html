@@ -31,9 +31,10 @@
 <app-data-table></app-data-table>
 
 
+<div class="listandbutton">
+  <input #newItemInput type="text" placeholder="New Item">
+  <app-button [label]="'Hinzufügen'" (click)="addItem(newItemInput.value); newItemInput.value=''"></app-button>
+</div>
 
-
-
-
-
+<app-liste [items]="listItems"></app-liste>
 
