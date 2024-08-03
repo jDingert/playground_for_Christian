@@ -1,8 +1,16 @@
-.Searchbar{
-
+.Searchbar {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     display: flex;
-    background-color: rgb(247, 247, 247);
+    background-color: #ffffff;
     border-radius: 5em;
     padding: 1em;
     width: 20em;
-}
+    border: none;
+    font-size: 1em;
+    color: #0a033f;
+  }
+  
+  .Searchbar::placeholder {
+    color: lightgray;
+  }
+  

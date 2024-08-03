@@ -26,20 +26,32 @@
     display: flex;
     flex-direction: row;
     margin-top: 1em;
+    justify-content: center;
 }
 
 
-.listandbutton {
+.list {
     display: flex;
-    align-items: center;
     margin: 20px;
+    //Lässt sich nicht auf 50% bringen
   
   }
   //Chef Code
-  .listandbutton input[type="text"] {
+  .list input[type="text"] {
     flex: 1;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
     margin-right: 10px;
   }
+
+.datatable_list{
+
+    display: flex;
+    width: 95%;
+}
+
+.datatable{
+
+    width: 50%;
+}

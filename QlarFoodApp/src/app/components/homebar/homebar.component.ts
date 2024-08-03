@@ -2,14 +2,14 @@ import { Component, Input } from '@angular/core';
 import { ButtonComponent } from "../button/button.component";
 
 @Component({
-  selector: 'app-sidebar',
+  selector: 'app-homebar',
   standalone: true,
   imports: [ButtonComponent],
-  templateUrl: './sidebar.component.html',
-  styleUrl: './sidebar.component.scss'
+  templateUrl: './homebar.component.html',
+  styleUrl: './homebar.component.scss'
 })
+export class HomebarComponent {
 
-export class SidebarComponent {
+  @Input() label: string = 'Default';
 
-  @Input() text: string = 'Default';
 }

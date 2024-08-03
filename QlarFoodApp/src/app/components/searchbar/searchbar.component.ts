@@ -1,15 +1,16 @@
 import { Component, Input } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-searchbar',
   standalone: true,
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './searchbar.component.html',
   styleUrl: './searchbar.component.scss'
 })
 export class SearchbarComponent {
 
-  @Input() placeholder: string = 'Default';
-  @Input() value: string = 'Default';
+  @Input() placeholder: string = 'Suche';
+  @Input() value: string = '';
 
 }

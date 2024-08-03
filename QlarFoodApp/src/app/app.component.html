@@ -2,21 +2,21 @@
 
 <div class="MenuSetup">
   <div class="Sidebar">
-    <app-sidebar [Text]="'Proflex'"></app-sidebar>
-    <app-sidebar [Text]="'Multicor'"></app-sidebar>
-    <app-sidebar [Text]="'Multibelt'"></app-sidebar>
-    <app-sidebar [Text]="'Multirail'"></app-sidebar>
+    <app-sidebar [text]="'Proflex'"></app-sidebar>
+    <app-sidebar [text]="'Multicor'"></app-sidebar>
+    <app-sidebar [text]="'Multibelt'"></app-sidebar>
+    <app-sidebar [text]="'Multirail'"></app-sidebar>
 
   </div>
   
 
   <div class="Mainbar">
-    <app-button [label]="'Home'"></app-button>
-    <app-button [label]="'Rezepte'"></app-button>
-    <app-button [label]="'Maschinen'"></app-button>
-    <app-button [label]="'Support'"></app-button>
-    <app-button [label]="'Über uns'"></app-button>
-    <app-button [label]="'Kontakt'"></app-button>
+    <app-homebar [label]="'Home'"></app-homebar>
+    <app-homebar [label]="'Rezepte'"></app-homebar>
+    <app-homebar [label]="'Maschinen'"></app-homebar>
+    <app-homebar [label]="'Support'"></app-homebar>
+    <app-homebar [label]="'Über'"></app-homebar>
+    <app-homebar [label]="'Kontakt'"></app-homebar>
     <app-searchbar [placeholder]="'Search'"></app-searchbar>
   </div>
 </div>
@@ -27,14 +27,24 @@
   <app-food-choose-screen [Headline] ="'5 Rezepte die gut für den Kreislauf und die Wirtschaft sind'" [Account]="'GrillmeisterBrucki'" [Views]="'1,2 Mio Aufrufe - 22.07.2024'"></app-food-choose-screen>
 </div>
 
+<div class="datatable_list">
 
-<app-data-table></app-data-table>
+  <div class="datatable">
+    <app-data-table></app-data-table>
+  </div>
 
+  <div>
 
-<div class="listandbutton">
-  <input #newItemInput type="text" placeholder="New Item">
-  <app-button [label]="'Hinzufügen'" (click)="addItem(newItemInput.value); newItemInput.value=''"></app-button>
+    <div class="list">
+      <input #newItemInput type="text" placeholder="New Item">
+      <app-button [label]="'Hinzufügen'" (click)="addItem(newItemInput.value); newItemInput.value=''"></app-button>
+    </div>
+    
+    <app-liste [items]="listItems"></app-liste>
+    
+  </div>
+
 </div>
+  
 
-<app-liste [items]="listItems"></app-liste>
 
