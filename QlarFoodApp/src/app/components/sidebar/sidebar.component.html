@@ -1,3 +1,7 @@
-<div>
-    <button class="Button_Component">{{ text }}</button>
-  </div>
+<div class="sidebar">
+  <app-button
+    class="button-margin"
+    *ngFor="let item of items"
+    [label]="item"
+  ></app-button>
+</div>

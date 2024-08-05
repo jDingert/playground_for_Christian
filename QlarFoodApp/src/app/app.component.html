@@ -2,13 +2,10 @@
 
 <div class="MenuSetup">
   <div class="Sidebar">
-    <app-sidebar [text]="'Proflex'"></app-sidebar>
-    <app-sidebar [text]="'Multicor'"></app-sidebar>
-    <app-sidebar [text]="'Multibelt'"></app-sidebar>
-    <app-sidebar [text]="'Multirail'"></app-sidebar>
-
+    <app-sidebar
+      [items]="['Proflex', 'Multicor', 'Multibelt', 'Multirail']"
+    ></app-sidebar>
   </div>
-  
 
   <div class="Mainbar">
     <app-homebar [label]="'Home'"></app-homebar>
@@ -22,29 +19,32 @@
 </div>
 
 <div class="videocontainer">
-
-  <app-food-choose-screen [Headline] ="'Die besten Rezepte für deine Schenck Process Legacy Products'" [Account]="'Qlar'" [Views]="'503.237 Aufrufe - 22.07.2024'"></app-food-choose-screen>
-  <app-food-choose-screen [Headline] ="'5 Rezepte die gut für den Kreislauf und die Wirtschaft sind'" [Account]="'GrillmeisterBrucki'" [Views]="'1,2 Mio Aufrufe - 22.07.2024'"></app-food-choose-screen>
+  <app-food-choose-screen
+    [Headline]="'Die besten Rezepte für deine Schenck Process Legacy Products'"
+    [Account]="'Qlar'"
+    [Views]="'503.237 Aufrufe - 22.07.2024'"
+  ></app-food-choose-screen>
+  <app-food-choose-screen
+    [Headline]="'5 Rezepte die gut für den Kreislauf und die Wirtschaft sind'"
+    [Account]="'GrillmeisterBrucki'"
+    [Views]="'1,2 Mio Aufrufe - 22.07.2024'"
+  ></app-food-choose-screen>
 </div>
 
 <div class="datatable_list">
-
   <div class="datatable">
     <app-data-table></app-data-table>
   </div>
 
   <div>
-
     <div class="list">
-      <input #newItemInput type="text" placeholder="Neuer Eintrag">
-      <app-button [label]="'Hinzufügen'" (click)="addItem(newItemInput.value); newItemInput.value=''"></app-button>
+      <input #newItemInput type="text" placeholder="Neuer Eintrag" />
+      <app-button
+        [label]="'Hinzufügen'"
+        (click)="addItem(newItemInput.value); newItemInput.value = ''"
+      ></app-button>
     </div>
-    
+
     <app-liste [items]="listItems"></app-liste>
-    
   </div>
-
 </div>
-  
-
-
