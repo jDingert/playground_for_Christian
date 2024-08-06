@@ -1,4 +1,4 @@
-<div class="containerMain">
+<div class="containerMain" *ngFor="let Recipe_item of Recipe_items">
     
     <div class="imageContainer">
 
@@ -21,7 +21,7 @@
     
         <div class="headline">
 
-            <p>{{Headline}}</p>
+            <p>{{Recipe_item.headline}}</p>
     
         </div>
 
@@ -29,13 +29,13 @@
 
     <div class="UsernameContainer">
 
-        <p>{{Account}}</p>
+        <p>{{Recipe_item.account}}</p>
 
     </div>
 
     <div class="ViewAndDateContainer">
 
-        <p>{{Views}}</p>
+        <p>{{Recipe_item.views}}</p>
 
     </div>
 

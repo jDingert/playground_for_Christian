@@ -15,14 +15,7 @@
 
 <div class="videocontainer">
   <app-food-choose-screen
-    [Headline]="'Die besten Rezepte für deine Schenck Process Legacy Products'"
-    [Account]="'Qlar'"
-    [Views]="'503.237 Aufrufe - 22.07.2024'"
-  ></app-food-choose-screen>
-  <app-food-choose-screen
-    [Headline]="'5 Rezepte die gut für den Kreislauf und die Wirtschaft sind'"
-    [Account]="'GrillmeisterBrucki'"
-    [Views]="'1,2 Mio Aufrufe - 22.07.2024'"
+    [Recipe_items]="[{headline:'Die besten Rezepte', account:'Qlar', views:'36742394', thumpnail:'thumpnail'},{headline:'Die besten Rezepte', account:'Qlar', views:'36742394', thumpnail:'thumpnail'}]"
   ></app-food-choose-screen>
 </div>
 
@@ -32,14 +25,8 @@
   </div>
 
   <div>
-    <div class="list">
-      <input #newItemInput type="text" placeholder="Neuer Eintrag" />
-      <app-button
-        [label]="'Hinzufügen'"
-        (click)="addItem(newItemInput.value); newItemInput.value = ''"
-      ></app-button>
-    </div>
+    
 
-    <app-liste [items]="listItems"></app-liste>
+    <app-liste></app-liste>
   </div>
 </div>

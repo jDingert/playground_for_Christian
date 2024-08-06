@@ -17,11 +17,4 @@ import { HomebarComponent } from "./components/homebar/homebar.component";
 })
 export class AppComponent {
   title = 'QlarFoodApp';
-  listItems: string[] = [];
-
-  addItem(newItem: string) {
-    if (newItem) {
-      this.listItems.push(newItem);
-    }
-  }
 }

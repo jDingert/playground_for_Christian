@@ -12,14 +12,21 @@ import { ButtonComponent } from "../button/button.component";
 })
 export class ListeComponent {
 
-  @Input() items: string[] = [];
+  items: string[] = [];
 
   //Chef Code
   addItem(newItem: string) {
+    debugger;
+    console.log(newItem)
     this.items.push(newItem);
   }
 
   removeItem(index: number) {
+    const test=this.items;
+    console.log(test)
+    debugger;
     this.items.splice(index, 1);
+    console.log(this.items)
+    console.log(index)
   }
 }
