@@ -8,12 +8,7 @@
   </div>
 
   <div class="Mainbar">
-    <app-homebar [label]="'Home'"></app-homebar>
-    <app-homebar [label]="'Rezepte'"></app-homebar>
-    <app-homebar [label]="'Maschinen'"></app-homebar>
-    <app-homebar [label]="'Support'"></app-homebar>
-    <app-homebar [label]="'Über'"></app-homebar>
-    <app-homebar [label]="'Kontakt'"></app-homebar>
+    <app-homebar [items]="['Home', 'Rezepte', 'Maschinen', 'Support', 'Kontakt']"></app-homebar>
     <app-searchbar [placeholder]="'Search'"></app-searchbar>
   </div>
 </div>

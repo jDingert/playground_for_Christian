@@ -1,1 +1,11 @@
-@import '../button/button.component.scss';
+.Homebar{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    width: 100%;
+    height: 4em;
+    margin-left: 3em;
+    
+}
